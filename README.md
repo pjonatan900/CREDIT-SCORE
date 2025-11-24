@@ -1,9 +1,5 @@
 # Model Credit - Proyecto Credit Score (ANN)
 
-Este proyecto replica la estructura del repositorio `model-credit`, pero
-usando el dataset `Score.csv` (problema de clasificación multiclase para
-`Credit_Score`) y un modelo tipo ANN implementado con `MLPClassifier`
-de scikit-learn.
 
 Estructura principal:
 
@@ -19,7 +15,7 @@ La columna objetivo es **`Credit_Score`** con valores: `Poor`, `Standard`, `Good
 
 ### Paso 0: Ingrese al Escritorio remoto
 
-### Paso 1: Fork del Repositorio Original (este proyecto)
+### Paso 1: Fork del Repositorio Original 
 
 En el navegador, inicie sesión en Github. Luego, suba este proyecto como
 un repositorio llamado, por ejemplo, `model-credit`. Si el docente usa
@@ -53,9 +49,8 @@ pip install -r requirements.txt
 
 ### Paso 6: Verificar datos crudos
 
-Este proyecto ya espera el archivo:
 
-- `data/raw/Score.csv`  (incluido en este repo)
+- `data/raw/Score.csv` 
 
 Si se reemplaza por una nueva versión, debe conservar al menos la columna
 objetivo `Credit_Score` y las demás columnas usadas en el notebook.
@@ -65,7 +60,6 @@ objetivo `Credit_Score` y las demás columnas usadas en el notebook.
 ```bash
 cd src
 
-python make_dataset.py      # opcional (stub, solo imprime un mensaje)
 python train.py             # entrena el modelo y guarda best_model.pkl
 python evaluate.py          # calcula métricas sobre credit_val.csv
 python predict.py           # genera data/scores/final_score.csv
@@ -81,5 +75,3 @@ git commit -m "Pruebas Finalizadas"
 git push
 ```
 
-Con esto, el flujo es análogo al del proyecto guía `model-credit`, pero
-adaptado al dataset `Score.csv` y a un modelo ANN con scikit-learn.
