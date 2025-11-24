@@ -18,8 +18,7 @@ La columna objetivo es **`Credit_Score`** con valores: `Poor`, `Standard`, `Good
 ### Paso 1: Fork del Repositorio Original 
 
 En el navegador, inicie sesión en Github. Luego, suba este proyecto como
-un repositorio llamado, por ejemplo, `model-credit`. Si el docente usa
-el mismo flujo que el proyecto guía, podrá hacer un *fork* desde allí.
+un repositorio llamado, por ejemplo, `model-credit`. 
 
 ### Paso 2: Levantar el contenedor de Python
 
